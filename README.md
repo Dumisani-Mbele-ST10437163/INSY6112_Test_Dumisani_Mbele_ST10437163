@@ -19,5 +19,5 @@ CREATE TABLE FictionBook (
     BookTitle VARCHAR(250) NOT NULL,
     PublicationDate VARCHAR(50) NOT NULL,
     PRIMARY KEY (BookID),
-    FOREIGN KEY (AuthorID)
+    FOREIGN KEY (AuthorID) REFERENCES Author(AuthorID)
 );
