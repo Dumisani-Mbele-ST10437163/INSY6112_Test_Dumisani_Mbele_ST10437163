@@ -1,2 +1,23 @@
-# INSY6112_Test_Dumisani_Mbele_ST10437163
-practical test of Dumisani Mbele, ST10437163
+Question 3
+3.1
+
+USE insy6112_test;
+
+CREATE TABLE Author (
+    AuthorID INT AUTO_INCREMENT,
+    AuthorName VARCHAR(250) NOT NULL,
+    AuthorEmail VARCHAR(50) NOT NULL,
+    PRIMARY KEY (AuthorID)
+);
+
+3.2
+
+USE insy6112_test;
+
+CREATE TABLE FictionBook (
+    BookID INT AUTO_INCREMENT,
+    BookTitle VARCHAR(250) NOT NULL,
+    PublicationDate VARCHAR(50) NOT NULL,
+    PRIMARY KEY (BookID),
+    FOREIGN KEY (AuthorID)
+);
